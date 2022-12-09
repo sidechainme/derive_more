@@ -24,6 +24,7 @@
 //! [`MulAssign`-like]: crate::MulAssign
 //!
 //! [`Constructor`]: crate::Constructor
+//! [`AsVariant`]: crate::AsVariant
 //! [`IsVariant`]: crate::IsVariant
 //! [`Unwrap`]: crate::Unwrap
 #![doc = include_str!("../README.md")]

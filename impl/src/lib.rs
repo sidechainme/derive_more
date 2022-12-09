@@ -25,6 +25,8 @@ mod add_like;
 mod as_mut;
 #[cfg(feature = "as_ref")]
 mod as_ref;
+#[cfg(feature = "as_variant")]
+mod as_variant;
 #[cfg(feature = "constructor")]
 mod constructor;
 #[cfg(feature = "deref")]
@@ -227,6 +229,13 @@ create_derive!(
 create_derive!("as_ref", as_ref, AsRef, as_ref_derive, as_ref);
 create_derive!("as_mut", as_mut, AsMut, as_mut_derive, as_mut);
 
+create_derive!(
+    "as_variant",
+    as_variant,
+    AsVariant,
+    as_variant_derive,
+    as_variant
+);
 create_derive!(
     "is_variant",
     is_variant,
