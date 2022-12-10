@@ -27,6 +27,8 @@ mod as_mut;
 mod as_ref;
 #[cfg(feature = "as_variant")]
 mod as_variant;
+#[cfg(feature = "as_variant_mut")]
+mod as_variant_mut;
 #[cfg(feature = "constructor")]
 mod constructor;
 #[cfg(feature = "deref")]
@@ -235,6 +237,13 @@ create_derive!(
     AsVariant,
     as_variant_derive,
     as_variant
+);
+create_derive!(
+    "as_variant_mut",
+    as_variant_mut,
+    AsVariantMut,
+    as_variant_mut_derive,
+    as_variant_mut
 );
 create_derive!(
     "is_variant",

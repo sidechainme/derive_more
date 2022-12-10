@@ -44,6 +44,7 @@ add = ["derive_more-impl/add"]
 as_mut = ["derive_more-impl/as_mut"]
 as_ref = ["derive_more-impl/as_ref"]
 as_variant = ["derive_more-impl/as_variant"]
+as_variant_mut = ["derive_more-impl/as_variant_mut"]
 constructor = ["derive_more-impl/constructor"]
 deref = ["derive_more-impl/deref"]
 deref_mut = ["derive_more-impl/deref_mut"]
@@ -76,6 +77,7 @@ all_no_std = [
     "as_mut",
     "as_ref",
     "as_variant",
+    "as_variant_mut",
     "constructor",
     "deref",
     "deref_mut",
@@ -123,6 +125,11 @@ required-features = ["as_ref"]
 name = "as_variant"
 path = "tests/as_variant.rs"
 required-features = ["as_variant"]
+
+[[test]]
+name = "as_variant_mut"
+path = "tests/as_variant_mut.rs"
+required-features = ["as_variant_mut"]
 
 [[test]]
 name = "boats_display_derive"
@@ -233,6 +240,7 @@ required-features = [
     "as_mut",
     "as_ref",
     "as_variant",
+    "as_variant_mut",
     "constructor",
     "deref",
     "deref_mut",
@@ -260,6 +268,7 @@ required-features = [
     "as_mut",
     "as_ref",
     "as_variant",
+    "as_variant_mut",
     "constructor",
     "deref",
     "deref_mut",
@@ -285,6 +294,7 @@ required-features = [
     "as_mut",
     "as_ref",
     "as_variant",
+    "as_variant_mut",
     "constructor",
     "deref",
     "deref_mut",
@@ -310,6 +320,7 @@ required-features = [
     "as_mut",
     "as_ref",
     "as_variant",
+    "as_variant_mut",
     "constructor",
     "deref",
     "deref_mut",

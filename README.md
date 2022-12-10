@@ -133,7 +133,8 @@ These don't derive traits, but derive static methods instead.
    out the [`derive-new`] crate.
 2. [`IsVariant`], for each variant `foo` of an enum type, derives a `is_foo` method.
 3. [`AsVariant`], for each variant `foo` of an enum type, derives a `as_foo` method.
-4. [`Unwrap`], for each variant `foo` of an enum type, derives an `unwrap_foo` method.
+4. [`AsVariantMut`], for each variant `foo` of an enum type, derives a `as_foo_mut` method.
+5. [`Unwrap`], for each variant `foo` of an enum type, derives an `unwrap_foo` method.
 
 
 
@@ -194,4 +195,5 @@ extern crate derive_more;
 [`Constructor`]: https://jeltef.github.io/derive_more/derive_more/constructor.html
 [`IsVariant`]: https://jeltef.github.io/derive_more/derive_more/is_variant.html
 [`AsVariant`]: https://jeltef.github.io/derive_more/derive_more/as_variant.html
+[`AsVariantMut`]: https://jeltef.github.io/derive_more/derive_more/as_variant_mut.html
 [`Unwrap`]: https://jeltef.github.io/derive_more/derive_more/unwrap.html
